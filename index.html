@@ -1,0 +1,107 @@
+<!-- api key: AIzaSyD_mwJc9_MoY4m42NmYJTZW4_Wx0dfgSqY -->
+
+<!-- new api key: AIzaSyAxtd2uJWYRCK-Mm8lcJyoBKq7E5s1chZs -->
+
+<!DOCTYPE html> 
+<html>
+  <head>
+    <title>Geoquiz!</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+	<!-- <p>What's going on??</p> -->
+	<section class="switch_to_chrome">
+		This site is only compatible with Chrome browsers.<br> 
+		<a href="hhttps://www.google.com/chrome/" class="switch_now">Please switch to Chrome before you continue.</a>
+	</section>
+	<section class="quiz_intro">
+		<h1><span>Geo</span>Quiz!</h1>
+		<p>Welcome to GeoQuiz - a cool geography game!</p>
+		<p>Instructions:</p>
+		<ul>
+			<li>Say/type the name of the country</li>
+			<li>Beware of the timer - you have 60 seconds!</li>
+			<li>Learn more about our world!</li>
+		</ul>
+
+		<h3>Please select a mode:</h3>
+		<form>
+		  <input type="radio" name="mode" id="voice" value="1" checked><label for="voice"> Voice input mode </label><br>
+		  <br>
+		  <input type="radio" name="mode" id="text" value="2"><label for="text"> Text input mode </label><br>
+		</form>
+		<div class="start">START!</div>
+		<p class="credit">&copy; 2016 <a href="http://www.d2dev.io">d2dev</a></p>
+	</section>
+
+    <div id="map"></div>
+    <div class="info_bar">
+    	<p class="in-game_instructions">Please say the name of the country (or "I don't know")</p>
+    	<form>
+    		<input type="text" id="text_answer">
+    	</form>
+    	<p class="last_said_word">_____</p>
+    	<p class="hal_response">_____</p>
+		<div class="user_points">
+			<p class="points">Points: 0</p>
+			<p class="time">Time: 99 seconds</p>
+		</div>
+    </div>
+    <p class="diagnostics">
+      	Current response: <br>
+      	Vocal input:
+    </p>
+    <section class="quiz_outro">
+    	<h1>Thank you for playing <span>Geo</span>Quiz!</h1>
+    	<h2 class="countries_right">You got __ countries right in 60 seconds!</h2>
+    	<h2 class="personal_title">You're a real champ/master/scholar!</h2>
+    	<div class="restart">AGAIN!</div>
+    	<p>&copy; 2016 <a href="http://www.d2dev.io">d2dev</a></p>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxtd2uJWYRCK-Mm8lcJyoBKq7E5s1chZs&callback=initMap"
+    async defer></script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Geoquiz</title> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+<!-- </head>
+<body>
+	<h1>Speech synthesiser</h1>
+
+	<p>Enter some text in the input below and press return to hear it. change voices using the dropdown menu.</p>
+	
+	<form>
+	<input type="text" class="txt">
+	<div>
+	  <label for="rate">Rate</label><input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+	  <div class="rate-value">1</div>
+	  <div class="clearfix"></div>
+	</div>
+	<div>
+	  <label for="pitch">Pitch</label><input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+	  <div class="pitch-value">1</div>
+	  <div class="clearfix"></div>
+	</div>
+	<select>
+
+	</select>
+	</form>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
